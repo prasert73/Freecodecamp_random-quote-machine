@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./ole.js"></script>
     <title>Random Quote Machine By Ole Lemon</title>
  </head>
@@ -20,9 +21,11 @@
             <div class="row justify-content-center">
                 <div class='col-md-6 py-2'><h6 id='author' class="fs-6 text-end"></h6></div>
             </div>
-            <div class="row py-2 justify-content-evenly">
-                <button onClick="fetchQuote();" class='btn btn-primary col-sm-4' id='new-quote'>New Quote</button>
-                <a target='_blank' class='btn btn-warning col-md-3' id="tweet-quote">Tweeter</a>
+            <div class="row justify-content-center">
+                <button onClick="getNewQuote();" class='col-md-2 btn btn-danger m-2' id='new-quote'>New Quote</button>
+                <a class="col-md-5 m-2"></a>
+                <a target='_blank' class='col-md-1 btn btn-warning m-2' id="tweet-quote"><i class="fa fa-twitter"></i></a>
+                <a target='_blank' class='col-md-1 btn btn-primary m-2' id="fb-quote"><i class="fa fa-facebook"></i></a>
             </div>
        </div>
     </div>
