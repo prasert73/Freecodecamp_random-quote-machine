@@ -9,23 +9,24 @@
     <title>Random Quote Machine By Ole Lemon</title>
  </head>
  <body>
-<div class="container-fluid bg-primary vh-100 d-flex justify-content-center align-items-center">
-    <div class='col-md-4 rounded bg-danger py-2'>
+<div class="container-fluid vh-100 d-flex bg-primary justify-content-center align-items-center">
+    <div class='rounded bg-danger py-2' style="width:400px">
         <div id='quote-box' class="bg-secondary rounded text-white">
             <div  class="row justify-content-center">
-                <div class='col-md-6 py-2'><h2 class="fw-bold fst-italic text-center">Inspiration Quotes</h1></div>
+                <div class='col-6 py-2'><h2 class="fw-bold fst-italic text-center">Inspiration Quotes</h1></div>
             </div>
             <div class="row justify-content-center">
-                <div class='col-md-6 py-2'><p id='text' class='fs-6 text-start'></p></div>
+                <div class='col-10 py-2'><p id='text' class='fs-6 text-start'></p></div>
             </div>
             <div class="row justify-content-center">
-                <div class='col-md-6 py-2'><h6 id='author' class="fs-6 text-end"></h6></div>
+                <div class='col-8 py-2'><h6 id='author' class="fs-6 fst-italic text-end"></h6></div>
+                
             </div>
             <div class="row justify-content-center">
-                <button onClick="getNewQuote();" class='col-md-2 btn btn-danger m-2' id='new-quote'>New Quote</button>
-                <a class="col-md-5 m-2"></a>
-                <a target='_blank' class='col-md-1 btn btn-warning m-2' id="tweet-quote"><i class="fa fa-twitter"></i></a>
-                <a target='_blank' class='col-md-1 btn btn-primary m-2' id="fb-quote"><i class="fa fa-facebook"></i></a>
+                <button onClick="getNewQuote();" style='width: 120px' class='btn btn-danger m-2 fs-6' id='new-quote'>New Quote</button>
+                <a class="col-3 m-2"></a>
+                <a target='_blank' class='col-1 btn btn-warning m-2' id="tweet-quote"><i class="fa fa-twitter"></i></a>
+                <a target='_blank' class='col-1 btn btn-primary m-2' id="fb-quote"><i class="fa fa-facebook"></i></a>
             </div>
        </div>
     </div>
