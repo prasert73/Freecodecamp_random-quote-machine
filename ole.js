@@ -1,12 +1,11 @@
 
 let data;
-let response;
-//let randomIndex;
+
 
 window.onload = fetchData();
 
 async function fetchData() {
-    response = await fetch("https://type.fit/api/quotes");
+    const response = await fetch("https://type.fit/api/quotes");
     data = await response.json(); 
     getNewQuote();
 }
